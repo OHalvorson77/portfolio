@@ -89,9 +89,17 @@ nav a:hover {
 }
 
 .resume-paper h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 5px;
+}
+
+.right {
+    text-align: right;
 }
 
  .resume-heading {
@@ -104,10 +112,28 @@ nav a:hover {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.four-column-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four columns */
+    grid-template-rows: auto; /* Rows will adjust based on content */
+    gap: 10px; /* Space between items */
+    
+    
+}
+
+
 /*End of Resume Styling Section*/
 
 
 /*Project Styling Section*/ 
+.project {
+    margin-bottom: 20px;
+}
+.photos img {
+    max-width: 150px; /* Adjust size as needed */
+    margin-right: 10px;
+}
 /*End of Project Styling Section*/
 
 /*Contact Styling Section*/ 
